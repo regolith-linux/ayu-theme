@@ -1,11 +1,11 @@
 if !ENABLE_TRANSPARENCY
-themedir        = $(datadir)/themes/Ayu-Mirage-solid
-themedarkerdir  = $(datadir)/themes/Ayu-Mirage-Darker-solid
-themedarkdir    = $(datadir)/themes/Ayu-Mirage-Dark-solid
+themedir        = $(datadir)/themes/Ayu-solid
+themedarkerdir  = $(datadir)/themes/Ayu-Darker-solid
+themedarkdir    = $(datadir)/themes/Ayu-Dark-solid
 else
-themedir        = $(datadir)/themes/Ayu-Mirage
-themedarkerdir  = $(datadir)/themes/Ayu-Mirage-Darker
-themedarkdir    = $(datadir)/themes/Ayu-Mirage-Dark
+themedir        = $(datadir)/themes/Ayu
+themedarkerdir  = $(datadir)/themes/Ayu-Darker
+themedarkdir    = $(datadir)/themes/Ayu-Dark
 endif
 
 ithemedir       = $(DESTDIR)$(themedir)

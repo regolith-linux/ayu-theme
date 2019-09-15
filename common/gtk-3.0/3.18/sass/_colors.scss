@@ -2,13 +2,13 @@
 // it gets @if ed depending on $variant
 
 
-$base_color: if($variant =='light', #FAFAFA, #1F2430);
-$text_color: if($variant == 'light', #6C7680, #CBCCC6);
-$bg_color: if($variant =='light', #FFFFFF, #232834);
-$fg_color: if($variant =='light', #6C7680, #CBCCC6);
+$base_color: if($variant =='light', #FAFAFA, #0A0E14);
+$text_color: if($variant == 'light', #6C7680, #B3B1AD);
+$bg_color: if($variant =='light', #FFFFFF, #0D1016);
+$fg_color: if($variant =='light', #6C7680, #B3B1AD);
 
-$selected_fg_color: #CBCCC6;
-$selected_bg_color: #34455A;
+$selected_fg_color: #B3B1AD;
+$selected_bg_color: #273747;
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: if($variant =='light', darken($bg_color,9%), darken($bg_color,6%));
 
@@ -38,18 +38,18 @@ $insensitive_bg_color: if($variant == 'light', mix($bg_color, $base_color, 40%),
 $header_bg: red;
 @if $transparency=='true' and $variant=='light' { $header_bg: transparentize(#fafafa, 0.05); }
 @if $transparency=='false' and $variant=='light' { $header_bg: #fafafa; }
-@if $transparency=='true' and ($variant=='dark' or $darker=='true') { $header_bg: transparentize(#1F2430, 0.03); }
-@if $transparency=='false' and ($variant=='dark' or $darker=='true') { $header_bg: #1F2430; }
+@if $transparency=='true' and ($variant=='dark' or $darker=='true') { $header_bg: transparentize(#0A0E14, 0.03); }
+@if $transparency=='false' and ($variant=='dark' or $darker=='true') { $header_bg: #0A0E14; }
 
 $header_bg_backdrop: if($darker == 'true' or $variant == 'dark', lighten($header_bg, 1.5%), lighten($header_bg, 3%));
 
 $header_border: if($variant == 'light' and $darker=='false', darken($header_bg, 7%), darken($header_bg, 4%));
 
 $header_fg: if($variant == 'light', saturate(transparentize($fg_color, 0.2), 10%), saturate(transparentize($fg_color, 0.2), 10%));
-$header_fg: if($darker == 'true', saturate(transparentize(#CBCCC6, 0.2), 10%), $header_fg);
+$header_fg: if($darker == 'true', saturate(transparentize(#B3B1AD, 0.2), 10%), $header_fg);
 
-$dark_sidebar_bg: if($transparency == 'true', transparentize(#232834, 0.05), #232834);
-$dark_sidebar_fg: #CBCCC6;
+$dark_sidebar_bg: if($transparency == 'true', transparentize(#0D1016, 0.05), #0D1016);
+$dark_sidebar_fg: #B3B1AD;
 $dark_sidebar_border: if($variant == 'light', $dark_sidebar_bg, darken($dark_sidebar_bg, 5%));
 
 $osd_fg_color: $dark_sidebar_fg;
