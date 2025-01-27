@@ -134,7 +134,7 @@ jobs:
       - name: Update Manifests
         uses: regolith-linux/actions/update-manifest@main
         env:
-          GITHUB_TOKEN: ${{ secrets.ORG_BROADCAST_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ORG_BROADCAST_TOKEN2 }}
         with:
           name: "${{ github.event.repository.name }}"
           repo: "${{ github.server_url }}/${{ github.repository }}.git"
