@@ -1,3 +1,19 @@
+ayu-theme (0.2.3-1) bionic; urgency=medium
+
+  [ Ken Gilmer ]
+  * Add compat file
+
+  [ Khosrow Moossavi ]
+  * feat: enable github action to test pull requests
+  * feat: enable github action to publish to unstable
+  * feat: enable github action to publish to testing
+  * feat: enable github action to prepare release
+  * fix: typo in action branches names
+  * chore: use regolith-ci-bot user and token
+  * fix: create release tag from correct git sha
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Mon, 03 Feb 2025 21:23:53 +0000
+
 ayu-theme (0.2.2-1) bionic; urgency=medium
 
   * Change debhelper version for launchpad 
