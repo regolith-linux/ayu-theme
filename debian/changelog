@@ -1,3 +1,10 @@
+ayu-theme (0.2.4-1) bionic; urgency=medium
+
+  [ Khosrow Moossavi ]
+  * feat: use build-only to test pull request
+
+ -- Regolith Linux <regolith.linux@gmail.com>  Sun, 12 Oct 2025 15:07:19 +0000
+
 ayu-theme (0.2.3-1) bionic; urgency=medium
 
   [ Ken Gilmer ]
